@@ -119,7 +119,31 @@ class GradleBuildService :
       val gradlew = File(projectRoot, "gradlew")
       val gradleWrapperJar = File(projectRoot, "gradle/wrapper/gradle-wrapper.jar")
       val gradleWrapperProps = File(projectRoot, "gradle/wrapper/gradle-wrapper.properties")
-      return gradlew.exists() && gradleWrapperJar.exists() && gradleWrapperProps.exists()
+      
+      val filesExist = gradlew.exists() && gradleWrapperJar.exists() && gradleWrapperProps.exists()
+      if (!filesExist) return false
+      
+      // Check version. If it's too old, we should update it.
+      try {
+          val props = java.util.Properties()
+          gradleWrapperProps.inputStream().use { props.load(it) }
+          val url = props.getProperty("distributionUrl")
+          if (url != null) {
+              // distributionUrl=https\://services.gradle.org/distributions/gradle-7.4.2-all.zip
+              val versionMatch = java.util.regex.Pattern.compile("gradle-([0-9]+)\\.").matcher(url)
+              if (versionMatch.find()) {
+                  val majorVersion = versionMatch.group(1)?.toInt() ?: 0
+                  if (majorVersion < 8) {
+                      log.info("Gradle version in wrapper is too old ($majorVersion < 8). Forcing update.")
+                      return false
+                  }
+              }
+          }
+      } catch (e: Exception) {
+          log.warn("Failed to check Gradle wrapper version", e)
+      }
+      
+      return true
     }
 
   companion object {
@@ -450,6 +474,12 @@ class GradleBuildService :
     }
     try {
       val projectDir = ProjectManagerImpl.getInstance().projectDir
+      
+      // Force delete old wrapper files to ensure overwrite
+      File(projectDir, "gradlew").delete()
+      File(projectDir, "gradlew.bat").delete()
+      File(projectDir, "gradle/wrapper").deleteRecursively()
+      
       val files = ZipUtils.unzipFile(extracted, projectDir)
       if (files != null && files.isNotEmpty()) {
         return GradleWrapperCheckResult(true)
