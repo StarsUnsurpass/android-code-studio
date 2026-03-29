@@ -111,6 +111,10 @@ fun Project.configureAndroidModule(coreLibDesugDep: Provider<MinimalExternalModu
       sourceCompatibility = BuildConfig.javaVersion
       targetCompatibility = BuildConfig.javaVersion
     }
+    
+    project.tasks.withType(org.gradle.api.tasks.compile.JavaCompile::class.java).configureEach {
+        options.compilerArgs.addAll(listOf("-Xlint:-deprecation", "-Xlint:-unchecked"))
+    }
 
     configureCoreLibDesugaring(this, coreLibDesugDep)
 

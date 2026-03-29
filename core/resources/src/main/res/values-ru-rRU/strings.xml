@@ -44,7 +44,7 @@
   <string name="msg_sync_needed">Файлы Gradle были изменены. Пожалуйста пересоберите свой проект, чтобы синхронизировать зависимости и конфигурации.</string>
   <string name="preparing">Подготовка</string>
   <string name="preparing_first">Выполняется подготовка. Первая сборка может занять 10–15 минут!</string>
-  <string name="msg_installing_gradlew">Gradle Wrapper недоступен!\nУстановка версии Gradle по умолчанию. Gradle v7.4 будет скачан, если это необходимо.</string>
+  <string name="msg_installing_gradlew">Gradle Wrapper недоступен!\nУстановка версии Gradle по умолчанию. Gradle v8.9 будет скачан, если это необходимо.</string>
   <string name="run">Запустить</string>
   <!-- Project -->
   <string name="title_first_build">Первая сборка</string>

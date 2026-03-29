@@ -44,7 +44,7 @@
   <string name="msg_sync_needed">Los archivos Gradle han cambiado. Reconstruya su proyecto para sincronizar dependencias y configuraciones.</string>
   <string name="preparing">Preparando...</string>
   <string name="preparing_first">Preparando. ¡La primera construcción puede tardar hasta 10–15 minutos!</string>
-  <string name="msg_installing_gradlew">¡Gradle Wrapper no está disponible!\nInstale uno predeterminado. Gradle v7.4 se descargará si es necesario</string>
+  <string name="msg_installing_gradlew">¡Gradle Wrapper no está disponible!\nInstale uno predeterminado. Gradle v8.9 se descargará si es necesario</string>
   <string name="run">Run</string>
   <!-- Project -->
   <string name="title_first_build">Primera compilación</string>

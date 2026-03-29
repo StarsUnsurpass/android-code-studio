@@ -44,7 +44,7 @@
   <string name="msg_sync_needed">Le fichier Gradle a été modifié. Recompilez le projet pour synchroniser les dépendances et les configurations.</string>
   <string name="preparing">Préparation</string>
   <string name="preparing_first">Préparation en cours, la première compilation peut prendre de 10&#8211;15 minutes !</string>
-  <string name="msg_installing_gradlew">Gradle Wrapper n\'est pas disponible\nInstallation de celui par défaut. Gradle v7.4 sera téléchargé si nécessaire.</string>
+  <string name="msg_installing_gradlew">Gradle Wrapper n\'est pas disponible\nInstallation de celui par défaut. Gradle v8.9 sera téléchargé si nécessaire.</string>
   <string name="run">Compiler</string>
   <!-- Project -->
   <string name="title_first_build">Première compilation</string>

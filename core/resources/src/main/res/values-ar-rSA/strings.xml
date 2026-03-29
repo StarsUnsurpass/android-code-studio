@@ -44,7 +44,7 @@
   <string name="msg_sync_needed">تم تغيير ملفات Gradle. الرجاء إعادة بناء المشروع الخاص بك لمزامنة الاعتمادات والتهيئات.</string>
   <string name="preparing">جاري الإعداد</string>
   <string name="preparing_first">التحضير للبناء. قد يستغرق البناء الأول ما يصل إلى 10-15 دقيقة!</string>
-  <string name="msg_installing_gradlew">عذرا، Gradle wrapwrapper غير متوفر!\nجاري تثبيت واحدة افتراضية. سيتم تنزيل Gradle v7.4 إذا لزم الأمر.</string>
+  <string name="msg_installing_gradlew">عذرا، Gradle wrapwrapper غير متوفر!\nجاري تثبيت واحدة افتراضية. سيتم تنزيل Gradle v8.9 إذا لزم الأمر.</string>
   <string name="run">تشغيل</string>
   <!-- Project -->
   <string name="title_first_build">أول بناء</string>
@@ -225,7 +225,7 @@
   <string name="msg_output_text_extraction_failed">فشل الحصول على نص من المحرر</string>
   <string name="err_invalid_data_by_intent">البيانات غير صالحة للقصد.</string>
   <string name="msg_select_from_primary_storage">حدد مجلد من وحدة التخزين الرئيسية</string>
-  <string name="err_authority_not_allowed">السلطة \'\'%s\' غير مسموح بها</string>
+  <string name="err_authority_not_allowed">السلطة \'%s\' غير مسموح بها</string>
   <string name="idepref_useIcu_title">استخدام مكتبة ICU</string>
   <string name="idepref_useIcu_summary">استخدم مكتبة ICU لاستخدام استعادة حواف الكلمات للنقر المزدوج والضغط المطول على اختيار الكلمات.</string>
   <!--The text sorrounded with '@@' is spanned as clickable.-->

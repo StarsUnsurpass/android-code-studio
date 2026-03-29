@@ -70,7 +70,12 @@ subprojects {
 tasks.withType<KotlinCompile>().configureEach {
   compilerOptions {
     jvmTarget.set(org.jetbrains.kotlin.gradle.dsl.JvmTarget.fromTarget(BuildConfig.javaVersion.toString()))
-    freeCompilerArgs.addAll("-Xstring-concat=inline")
+    freeCompilerArgs.addAll(
+        "-Xstring-concat=inline",
+        "-Xskip-metadata-version-check",
+        "-opt-in=kotlinx.coroutines.ExperimentalCoroutinesApi",
+        "-Xconsistent-data-class-copy-visibility"
+    )
   }
 }
 }

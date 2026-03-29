@@ -24,8 +24,8 @@ android {
     }
 
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_17
-        targetCompatibility = JavaVersion.VERSION_17
+        sourceCompatibility = JavaVersion.VERSION_11
+        targetCompatibility = JavaVersion.VERSION_11
     }
 
     buildFeatures {
@@ -40,7 +40,7 @@ dependencies {
 
 tasks.register("fixAarName") {
     doLast {
-        val aarDir = file("$buildDir/outputs/aar")
+        val aarDir = project.layout.buildDirectory.dir("outputs/aar").get().asFile
         val files = aarDir.listFiles { f -> f.extension == "aar" } ?: return@doLast
         files.forEach { f ->
             if (f.name != "logger-runtime.aar") {

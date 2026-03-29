@@ -31,4 +31,8 @@ fun Project.configureJavaModule() {
     sourceCompatibility = BuildConfig.javaVersion
     targetCompatibility = BuildConfig.javaVersion
   }
+  
+  tasks.withType(org.gradle.api.tasks.compile.JavaCompile::class.java).configureEach {
+      options.compilerArgs.addAll(listOf("-Xlint:-deprecation", "-Xlint:-unchecked"))
+  }
 }

@@ -164,10 +164,9 @@
   <string name="msg_sync_needed">Gradle files have changed. Please rebuild your project to sync dependencies and configurations.</string>
   <string name="preparing">Preparing</string>
   <string name="preparing_first">Preparing. First build may take up to 10–15 minutes!</string>
-  <string name="msg_installing_gradlew">Gradle Wrapper is not available!\nInstalling default one. Gradle v7.4 will be downloaded if necessary.</string>
+  <string name="msg_installing_gradlew">Gradle Wrapper is not available!\nInstalling default one. Gradle v8.9 will be downloaded if necessary.</string>
   <string name="run">Run</string>
-  <string
-    name="gradle"
+  <string    name="gradle"
     translatable="false">Gradle</string>
 
   <!-- Project -->

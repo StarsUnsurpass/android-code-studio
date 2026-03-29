@@ -44,7 +44,7 @@
   <string name="msg_sync_needed">File Gradle telah berubah. Mohon build ulang proyek anda untuk menyinkronkan dependensi dan konfigurasi.</string>
   <string name="preparing">Menyiapkan</string>
   <string name="preparing_first">Menyiapkan. Build pertama mungkin memakan waktu sekitar 10&#8211;15 menit!</string>
-  <string name="msg_installing_gradlew">Gradle Wrapper tidak tersedia!\nMenginstal Gradle bawaan. Gradle v7.4 akan diunduh jika diperlukan.</string>
+  <string name="msg_installing_gradlew">Gradle Wrapper tidak tersedia!\nMenginstal Gradle bawaan. Gradle v8.9 akan diunduh jika diperlukan.</string>
   <string name="run">Jalankan</string>
   <!-- Project -->
   <string name="title_first_build">Build Pertama</string>

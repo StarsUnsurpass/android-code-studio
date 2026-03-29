@@ -44,7 +44,7 @@
   <string name="msg_sync_needed">Die Gradle-Dateien haben sich ver&#xE4;ndert. Bitte starte den Build Prozess um diese zu Synchronisieren.</string>
   <string name="preparing">Vorbereiten</string>
   <string name="preparing_first">Vorbereiten. Der erste Build kann bis zu 10 bis 15 Minuten dauern!</string>
-  <string name="msg_installing_gradlew">Gradle Wrapper ist nicht verf&#xFC;gbar!\nStandard-Wrapper wird installiert. Gradle v7.4 wird bei Bedarf heruntergeladen.</string>
+  <string name="msg_installing_gradlew">Gradle Wrapper ist nicht verf&#xFC;gbar!\nStandard-Wrapper wird installiert. Gradle v8.9 wird bei Bedarf heruntergeladen.</string>
   <string name="run">Ausführen</string>
   <!-- Project -->
   <string name="title_first_build">Erster Build</string>
